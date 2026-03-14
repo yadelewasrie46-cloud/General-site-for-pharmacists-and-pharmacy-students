@@ -112,8 +112,7 @@ margin-right: 10px;
 
 }
 .left-section{
-width: 50px;
-margin-left: 5px;
+display:none;
 }
 
 .signin-button{
