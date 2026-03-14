@@ -58,11 +58,49 @@ body {
 display: none;
 }
 
+.side-bar{
+    position: absolute;
+    top: 85px;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+   
+    
+}
+.side-bar div{
+    margin-bottom: 10px;
+}
+.ppt a{
+text-decoration: none;
+color: white;
+
+}
+.ppt a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+.exam a{
+text-decoration: none;
+color: white;
+}
+.exam a:hover{
+     color: gold;
+    text-decoration: underline;
+}
+.reference a{
+text-decoration: none;
+color: white;
+
+}
+.reference a:hover{
+    color: gold;
+    text-decoration: underline;
 }
 .exam-link{
 display: none;
 
 }
+
 .refference-link{
 display: none;
 
@@ -128,7 +166,7 @@ color: $g-color;
 background-color: tomato;
 color: $y-color;
 }
-
+}
 
 
 @media (min-width: 501px) and (max-width: 1023px) {
