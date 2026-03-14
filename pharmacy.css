@@ -52,13 +52,84 @@ body {
 .right-section .signin-button {
   font-size: 23px;
 }
-
 @media (max-width:500px){
 .ppt-link{
 display: none;
 }
 
-.side-bar{
+
+.exam-link{
+display: none;
+
+}
+.refference-link{
+display: none;
+
+}
+.home-link{
+color: white;
+text-decoration: none;
+margin-right: 10px;
+margin-left: 10px;
+
+}
+.home-link:hover{
+text-decoration: underline;
+color: gold;
+}
+.home-link:active{
+color: tomato;
+}
+.mid-section{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.header{
+    margin-right: 0;
+    margin-left: 0;
+gap: 0px;
+background-color: rgb(116, 116, 208);
+color: white;
+font-size: 20px;
+height: 80px;
+width: 100%;
+position: fixed;
+z-index: 20;
+
+}
+input{
+width: 200px;
+font-size: 20px;
+
+}
+input::placeholder{
+padding-left: 10px;
+font-size: 20px;
+}
+.right-section{
+
+margin-right: 10px;
+
+}
+.left-section{
+display: none;
+}
+
+.signin-button{
+background-color: gold;
+border: none;
+border-radius: 5px;
+color: $g-color;
+
+
+
+}
+.signin-button:hover{
+background-color: tomato;
+color: $y-color;
+}.side-bar{
     position: absolute;
     top: 85px;
     left: 0;
@@ -96,76 +167,8 @@ color: white;
     color: gold;
     text-decoration: underline;
 }
-.exam-link{
-display: none;
-
-}
-
-.refference-link{
-display: none;
-
-}
-.home-link{
-color: white;
-text-decoration: none;
-margin-right: 10px;
-margin-left: 10px;
-
-}
-.home-link:hover{
-text-decoration: underline;
-color: gold;
-}
-.home-link:active{
-color: tomato;
-}
-.mid-section{
-    display: flex;
-    gap: 10px;
-    
-}
-
-.header{
-    margin-right: 0;
-    margin-left: 0;
-gap: 0px;
-background-color: rgb(116, 116, 208);
-color: white;
-font-size: 20px;
-height: 80px;
-width: 100%;
-}
-input{
-width: 200px;
-font-size: 20px;
-
-}
-input::placeholder{
-padding-left: 10px;
-font-size: 20px;
-}
-.right-section{
-
-margin-right: 10px;
-
-}
-.left-section{
-display:none;
-}
-
-.signin-button{
-background-color: gold;
-border: none;
-border-radius: 5px;
-color: $g-color;
 
 
-
-}
-.signin-button:hover{
-background-color: tomato;
-color: $y-color;
-}
 }
 
 
