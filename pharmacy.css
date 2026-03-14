@@ -127,7 +127,7 @@ background-color: tomato;
 color: $y-color;
 }
 
-@media (min-width: 401px) and (max-width: 1023px) {
+@media (min-width: 501px) and (max-width: 1023px) {
   .header {
     gap: 10px;
     font-size: 20px;
