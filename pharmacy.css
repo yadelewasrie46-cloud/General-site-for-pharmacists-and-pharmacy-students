@@ -71,7 +71,7 @@ display: none;
 color: white;
 text-decoration: none;
 margin-right: 10px;
-  margin-left:5px;
+margin-left: 10px;
 
 }
 .home-link:hover{
@@ -107,12 +107,13 @@ padding-left: 10px;
 font-size: 20px;
 }
 .right-section{
-width: 5\20px;
-margin-right: 0px;
+
+margin-right: 10px;
 
 }
 .left-section{
-display: none;
+width: 50px;
+margin-left: 5px;
 }
 
 .signin-button{
@@ -128,6 +129,8 @@ color: $g-color;
 background-color: tomato;
 color: $y-color;
 }
+
+
 
 @media (min-width: 501px) and (max-width: 1023px) {
   .header {
