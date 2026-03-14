@@ -52,7 +52,7 @@ body {
   font-size: 23px;
 }
 
-@media (max-width:400px){
+@media (max-width:500px){
 .ppt-link{
 display: none;
 }
