@@ -2,6 +2,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  padding-bottom:1000px;
 }
 
 .header {
@@ -69,7 +70,8 @@ display: none;
 .home-link{
 color: white;
 text-decoration: none;
-margin-right: 10;
+margin-right: 10px;
+  margin-left:5px;
 
 }
 .home-link:hover{
