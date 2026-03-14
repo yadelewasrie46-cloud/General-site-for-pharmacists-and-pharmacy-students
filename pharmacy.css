@@ -52,77 +52,81 @@ body {
   font-size: 23px;
 }
 
-@media (max-width: 400px) {
-  .ppt-link {
-    color: white;
-    text-decoration: none;
-    margin-right: 13px;
-  }
-  .ppt-link:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .exam-link {
-    display: none;
-  }
-  .refference-link {
-    display: none;
-  }
-  .home-link {
-    color: white;
-    text-decoration: none;
-    margin-right: 13px;
-  }
-  .home-link:hover {
-    text-decoration: underline;
-    color: gold;
-  }
-  .home-link:active {
-    color: tomato;
-  }
-  .mid-section {
+@media (max-width:400px){
+.ppt-link{
+display: none;
+}
+
+}
+.exam-link{
+display: none;
+
+}
+.refference-link{
+display: none;
+
+}
+.home-link{
+color: white;
+text-decoration: none;
+margin-right: 10;
+
+}
+.home-link:hover{
+text-decoration: underline;
+color: gold;
+}
+.home-link:active{
+color: tomato;
+}
+.mid-section{
     display: flex;
-  }
-  .header {
+    gap: 10px;
+    
+}
+
+.header{
     margin-right: 0;
     margin-left: 0;
-    gap: 12px;
-    background-color: rgb(116, 116, 208);
-    color: white;
-    font-size: 25px;
-    height: 80px;
-  }
-  input {
-    width: 400px;
-    font-size: 20px;
-  }
-  input::-moz-placeholder {
-    padding-left: 10px;
-    font-size: 20px;
-  }
-  input::placeholder {
-    padding-left: 10px;
-    font-size: 20px;
-  }
-  .right-section {
-    width: 100px;
-    margin-right: 5px;
-  }
-  .left-section {
-    width: 100px;
-    margin-left: 5px;
-  }
-  .signin-button {
-    background-color: gold;
-    border: none;
-    border-radius: 5px;
-    color: green;
-  }
-  .signin-button:hover {
-    background-color: tomato;
-    color: yellow;
-  }
+gap: 0px;
+background-color: rgb(116, 116, 208);
+color: white;
+font-size: 20px;
+height: 80px;
+width: 100%;
 }
+input{
+width: 200px;
+font-size: 20px;
+
+}
+input::placeholder{
+padding-left: 10px;
+font-size: 20px;
+}
+.right-section{
+width: 5\20px;
+margin-right: 0px;
+
+}
+.left-section{
+display: none;
+}
+
+.signin-button{
+background-color: gold;
+border: none;
+border-radius: 5px;
+color: $g-color;
+
+
+
+}
+.signin-button:hover{
+background-color: tomato;
+color: $y-color;
+}
+
 @media (min-width: 401px) and (max-width: 1023px) {
   .header {
     gap: 10px;
