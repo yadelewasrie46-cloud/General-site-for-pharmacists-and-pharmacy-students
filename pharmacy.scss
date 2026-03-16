@@ -7,6 +7,7 @@ body{
 padding: 0;
 box-sizing: border-box;
 margin: 0;
+padding-bottom: 1000px;
 
 }
 .header{
@@ -15,11 +16,7 @@ flex-direction: row;
 align-items: center;
 gap: 30px;
 font-size: 25px;
-
 }
-
-
-
 .left-section{
 width: 150px;
 margin-left: 20px;
@@ -45,9 +42,7 @@ input::placeholder{
 padding: 10px;
 font-size: 20px;
 
-}
-
-}
+}}
 .right-section{
 display: flex;
 width: 250px;
@@ -55,26 +50,16 @@ justify-content: space-between;
 margin-right: 10px;
 .signin-button{
 font-size: 23px;
-}
-}
+}}
 
 
-
-
-
-
-
-
-@media (max-width:400px){
+@media (max-width:500px){
 .ppt-link{
 display: none;
 }
-
-}
 .exam-link{
-display: none;
+display: none;}
 
-}
 .refference-link{
 display: none;
 
@@ -82,7 +67,8 @@ display: none;
 .home-link{
 color: white;
 text-decoration: none;
-margin-right: 10;
+margin-right: 10px;
+margin-left: 10px;
 
 }
 .home-link:hover{
@@ -93,33 +79,36 @@ color: gold;
 color: tomato;
 }
 .mid-section{
-    display: flex;
-    gap: 10px;
-    
+display: flex;
+gap: 10px;
+
 }
 
 .header{
-    margin-right: 0;
-    margin-left: 0;
 gap: 0px;
-background-color: rgb(116, 116, 208);
+background-color: rgb(116, 208, 164);
 color: white;
-font-size: 20px;
+font-size: 30px;
 height: 80px;
 width: 100%;
+position: fixed;
+top: 0;
+z-index: 20;
 }
 input{
-width: 200px;
+flex: 1;
 font-size: 20px;
-
+outline-color: blue;
+border: none;
+border-radius: 15px;
 }
 input::placeholder{
 padding-left: 10px;
 font-size: 20px;
 }
 .right-section{
-width: 5\20px;
-margin-right: 0px;
+
+margin-right: 10px;
 
 }
 .left-section{
@@ -129,8 +118,9 @@ display: none;
 .signin-button{
 background-color: gold;
 border: none;
-border-radius: 5px;
+border-radius: 15px;
 color: $g-color;
+padding: 5px 10px;
 
 
 
@@ -139,50 +129,306 @@ color: $g-color;
 background-color: tomato;
 color: $y-color;
 }
+.side-bar{
+position: absolute;
+top: 85px;
+left: 0;
+bottom: 0px;
+background-color: green;
+height: 1000px;
+
+
+}
+.side-bar div{
+margin-bottom: 10px;
+}
+.ppt a{
+text-decoration: none;
+color: white;
+
+}
+.ppt a:hover{
+color: gold;
+text-decoration: underline;
+}
+.exam a{
+text-decoration: none;
+color: white;
+}
+.exam a:hover{
+color: gold;
+text-decoration: underline;
+}
+.reference a{
+text-decoration: none;
+color: white;
+
+}
+.reference a:hover{
+color: gold;
+text-decoration: underline;
+}
+main div{
+margin-top: 90px;
+margin-left: 170px;
+}
+.reference div{
+margin-bottom: 20px;
+}
+.reference div:first-child{
+font-size: 30px;
+font-weight: bold;
+}
+.ppt div{
+margin-bottom: 20px;
+}
+.ppt div:first-child{
+font-size: 30px;
+font-weight: bold;
+}
+.exam div{
+margin-bottom: 20px;
+}
+.exam div:first-child{
+font-size: 30px;
+font-weight: bold;
+}}
 
 
 
-@media (min-width:401px) and (max-width:1023px){
+
+
+
+
+@media (min-width:501px) and (max-width:800px){
 .header{
-gap: 10px;
+gap: 40px;
 font-size: 20px;
 background-color: $g-color;
 color: $w-color;
 align-items: center;
+height: 80px;
+position: fixed;
+top: 0;
+z-index: 20;
+width: 100%;
+
+
 }
+.home-link:hover{
+text-decoration: underline;
+color: gold;}
+.side-bar{
+display: block;
+position: absolute;
+top: 90px;
+left: 0;
+bottom: 0px;
+background-color: $g-color;
+font-size: 20px;
+
+}
+
 .left-section{
-width: 100px;
+width: 50px;
+margin-left: 5px;
 }
 .home-link{
-margin-right: 10px;
+margin-right: 20px;
 color: $w-color;
 text-decoration: none;
+}
+.mid-section{
+flex: 1;
+align-items: center;
+
 }
 .ppt-link{
-margin-right: 10px;
-color: $w-color;
-text-decoration: none;
+display: none;
+
 }
 .exam-link{
-margin-right: 10px;
-color: $w-color;
-text-decoration: none;
+display: none;
+
 }
 .right-section{
-width: 250px;
-margin-right: 5px;
+width: 100px;
+margin-right: 10px;
 align-items: center;
 }
 .refference-link{
-margin-right: 10px;
-color: $w-color;
+display: none;
+
+}
+
+input{
+flex: 1;
+font-size: 25px;
+border: none;
+border-radius: 10px;
+outline-color: blue;
+
+}
+.signin-button{
+background-color: gold;
+color: white;
+border: none;
+border-radius: 10px;
+
+}
+.signin-button:hover{
+background-color: tomato;
+color: gold;
+}
+.ppt div{
+margin-bottom: 20px;
+}
+.ppt div:first-child{
+font-size: 30px;
+font-weight: bold;
+}
+.ppt a{
 text-decoration: none;
+color: white;
+
+}
+.ppt a:hover{
+color: gold;
+text-decoration: underline;
+}
+.exam div{
+margin-bottom: 20px;
+}
+.exam div:first-child{
+font-size: 30px;
+font-weight: bold;
+}
+.exam a{
+text-decoration: none;
+color: white;
+}
+.exam a:hover{
+color: gold;
+text-decoration: underline;
+}
+.reference div{
+margin-bottom: 20px;
+}
+.reference div:first-child{
+font-size: 30px;
+font-weight: bold;
+}
+.reference a{
+text-decoration: none;
+color: white;
+
+}
+.reference a:hover{
+color: gold;
+text-decoration: underline;
+}
+.side-bar{
+height: 1000px;
+}
+main div{
+margin-top: 90px;
+margin-left: 180px;
+}}
+
+
+
+@media (min-width:800px){
+.header{
+gap: 25px;
+background-color: $g-color;
+display: flex;
+align-items: center;
+height: 80px;
+position: fixed;
+top: 0;
+width: 100%;
+
+}
+.side-bar{
+display: none;
+}
+.left-section{
+width: 80px;
+margin-left: 15px;
+}
+.mid-section{
+display: flex;
+gap: 10px;
 }
 input{
-    width: 100px;
-    font-size: 20px;
+flex: 1;
+font-size: 25px;
+max-width: 60%;
+min-width: 10%;
+outline-color: $b-color;
+border: none;
+border-radius: 20px;
 }
-
+.exam-link{
+margin-right: 20px;
+}
+.exam-link{
+color: white;
+text-decoration: none;
+}
+.exam-link:hover{
+color: gold;
+text-decoration: underline;
+}
+.home-link{
+color: white;
+text-decoration: none;
+}
+.home-link:hover{
+color: gold;
+text-decoration: underline;
+}
+.ppt-link{
+color: white;
+text-decoration: none;
+}
+.ppt-link:hover{
+color: gold;
+text-decoration: underline;
+}
+.refference-link{
+color: white;
+text-decoration: none;
+}
+.refference-link:hover{
+color: gold;
+text-decoration: underline;
+}
+.home-link{
+margin-right: 20px;
+}
+.ppt-link{
+margin-right: 20px;
+}
+.right-section{
+width: 250px;
+margin-right: 10px;
 
 }
-
+.refference-link{
+margin-right: 5px;
+}
+main div{
+margin-top: 90px;
+margin-left: 10px;
+}
+.signin-button{
+background-color: gold;
+color: white;
+border: none;
+border-radius: 10px;
+}
+.signin-button:hover{
+background-color: tomato;
+color: gold;
+}}
