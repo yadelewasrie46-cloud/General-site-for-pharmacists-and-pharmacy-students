@@ -5,6 +5,22 @@ body {
  
   
 }
+.main-content{
+  margin-left: 150px;
+  margin-top: 100px;
+}
+.footer{
+  background-color: black;
+  color: white;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+justify-content: center;
+ align-items: center;
+width: 100%;
+margin: 0;
+padding-bottom: 15px;
+}
 
 .header {
   display: flex;
@@ -130,7 +146,7 @@ body {
     left: 0;
     bottom: 0px;
     background-color: green;
-    height: 1000px;
+    height: 640px;
   }
   .side-bar div {
     margin-bottom: 10px;
@@ -151,9 +167,8 @@ body {
     color: gold;
     text-decoration: underline;
   }
-  .reference a {
-    text-decoration: none;
-    color: white;
+  .reference{
+   display: none;
   }
   .reference a:hover {
     color: gold;
@@ -193,7 +208,49 @@ body {
     margin-bottom: 20px;
    
   }
-  
+  .def-cognosy{
+    display: none;
+  }
+  .def-cology{
+    display: none;
+  }
+  .def-analysis{
+    display: none;
+  }
+  .def-chem{
+    display: none;
+  }
+  .def-therapy{
+    display: none;
+  }
+  .def-ceutics{
+    display: none;
+  }
+  .footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+  }
+ .cology-img{
+  max-width: 300px;
+ }
+ .ceutics-img{
+  max-width: 300px;
+ }
+ .analysis-img{
+  max-width: 300px;
+ }
+ .cognosy-img{
+  max-width: 300px;
+ }
+ .chemistry-img{
+  max-width: 300px;
+ }
+ .therapy-img{
+  max-width: 300px;
+ }
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .header {
@@ -311,7 +368,7 @@ body {
     text-decoration: underline;
   }
   .side-bar {
-    height: 1000px;
+    height: 1250px;
   }
   main div {
     margin-top: 90px;
@@ -321,10 +378,14 @@ body {
     display: grid;
     justify-items: center;
     align-content: center;
-    grid-template-columns: 1fr;
-    margin-left: 200px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
+    gap: 30px;
+  }
+  .main-content{
+    margin-left: 190px;
   }
   
 
@@ -424,41 +485,49 @@ body {
   }
   .Subject-logos{
     display: grid;
-    gap: 30px;
+    gap: 80px;
     justify-items: center;
     align-content: space-between;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
 .cology-img{
-  width: 300px;
+  width: 100%;
+  height: auto;
 
 }
 .therapy-img{
-  width: 300px;
+   width: 100%;
+  height: auto;
 
 }
 .cognosy-img{
-  width: 300px;
+  width: 100%;
+  height: auto;
 
 }
 .chemistry-img{
-  width: 300px;
+   width: 100%;
+  height: auto;
 
 }
 .analysis-img{
-  width: 300px;
+  width: 100%;
+  height: auto;
 
 }
 .ceutics-img{
-  width: 300px;
+  width: 100%;
+  height: auto;
 
 }
 .Subject-logos{
   display: grid;
   margin-bottom: 50px;
+  margin-left: 10px;
+  z-index: 100;
 }
 .cology{
   background-color: green;
@@ -551,17 +620,7 @@ body {
   box-shadow: 0px 0px 5px black;
 }
 
-.footer{
-  background-color: black;
-  padding-bottom: 5px;
- color: white;
- height: 200px;
- display: flex;
- flex-direction: column;
-justify-content: center;
- align-items: center;
-width: 100%;
-}
+
 .ref-link{
   text-decoration: none;
   color: orange;
@@ -636,10 +695,6 @@ font-size: 20px;
 .analysis-link:hover{
   text-decoration: underline;
   color: orange;
-}
-.main-content{
-  margin-left: 150px;
-  margin-top: 100px;
 }
 
 
