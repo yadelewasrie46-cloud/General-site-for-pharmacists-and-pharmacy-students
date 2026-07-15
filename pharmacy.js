@@ -68,7 +68,7 @@ function sideBar(e) {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: 60px;
+    margin-top: 100px;
     padding: 10px;
   `;
   
