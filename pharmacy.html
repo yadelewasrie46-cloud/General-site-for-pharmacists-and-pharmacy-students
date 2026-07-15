@@ -5,63 +5,32 @@
     <link rel="icon" href="https://media.istockphoto.com/id/1448745004/vector/pharmacy-logo-design-vector-medical-logo-vector.jpg?s=1024x1024&w=is&k=20&c=OEfxY_JS3qFUdRFKUg4JsE5QgtM6kSuU2dIPQSZURaI=" alt="" class="pharmacy-logo">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pharmaceutical library.css">
     <title>Pharmaceutical Lirary</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="head">
         <div class="left-section">
           <img src="https://media.istockphoto.com/id/1448745004/vector/pharmacy-logo-design-vector-medical-logo-vector.jpg?s=1024x1024&w=is&k=20&c=OEfxY_JS3qFUdRFKUg4JsE5QgtM6kSuU2dIPQSZURaI=" alt="" class="pharmacy-logo">
         </div>
         <div class="mid-section">
             
-           <span><a href="" class="home-link" title="Home">Home</a></span>
-            <span><a href="" class="ppt-link unwanted" title="PPTS">PPTS</a></span>
-            <span><a href="" class="exam-link unwanted" title="Exams">Exams</a></span>
-           <input type="search" placeholder="Search...">
-          
-            
-
-            </div>
-           
-        </div>
+           <span class="home"
+           ><button  class="home-button" title="Home" id="home">Home</button></span>
+            <span class="ppts"><a href="" class="ppt-link unwanted" title="PPTS">PPTS</a></span>
+            <span class="exams"><a href="" class="exam-link unwanted" title="Exams">Exams</a></span>
+           <input type="search" placeholder="Sear..." class="input" id="inputs"></div>
+           </div>
         <div class="right-section">
-            <span><a href="" class="refference-link" title="References">Refferences</a></span>
-            <span class="span-tooltip"><a href="" class="signin-link"><button class="signin-button">SignIn</button></a>
-            <div class="sign-tooltip">SignIn</div></span>
+            <span class="refference"><a href="" class="refference-link" title="References">Refferences</a></span>
+            
+            <span class="span-tooltip">
+                <a href="" class="signin-link"><button class="signin-button">SignIn</button></a>
+            
+                <div class="sign-tooltip">SignIn</div></span>
         </div>
     
     </header>
-    <div class="side-bar">
-<div class="ppt"><a href="">PPTS</a>
-<div><a href="#pharmacology">Pharmacology</a></div>
-<div><a href="#pharmaceutics">Pharmaceutics</a></div>
-<div><a href="#pharmacotherapy">Pharmacotherapy</a></div>
-<div><a href="#med-chem">Medicinal-Chemistry</a></div>
-<div><a href="#analysis">Pharmaco-Analysis</a></div>
-<div><a href="#pharmacognosy">Pharmacognosy</a></div>
-
-
-
-</div>
-<div class="exam"><a href="">Exams</a>
-<div><a href="">Pharmacology</a></div>
-<div><a href="">Pharmaceutics</a></div>
-<div><a href="">Pharmacotherapy</a></div>
-<div><a href="">Medicinal-Chemistry</a></div>
-<div><a href="">Pharmaco-Analysis</a></div>
-<div><a href="">Pharmacognosy</a></div>
-
-</div>
-<div class="reference"><a href="">References</a>
-<div><a href="">Pharmacology</a></div>
-<div><a href="">Pharmaceutics</a></div>
-<div><a href="">Pharmacotherapy</a></div>
-<div><a href="">Medicinal-Chemistry</a></div>
-<div><a href="">Pharmaco-Analysis</a></div>
-<div><a href="">Pharmacognosy</a></div>
-
-</div>
-</div>
     <div class="container">
     <div class="main-content">
         <h1>📚 Pharmacy</h1>
@@ -84,69 +53,73 @@
         
         <h2>🧬 Medicinal Chemistry</h2>
         <p class="def-chem"><strong>Medicinal Chemistry</strong> focuses on the design, synthesis, and optimization of bioactive molecules. Using structure-activity relationships (SAR), computational chemistry (docking, QSAR), and organic synthesis, medicinal chemists discover new drug candidates. Landmark examples include the development of penicillins, statins, and HIV protease inhibitors.
-        Modern medicinal chemistry embraces fragment-based drug discovery, DNA-encoded libraries, and AI-driven hit identification. The ultimate goal is to create potent, selective, and metabolically stable compounds with minimal toxicity.</p></div></div>
+        Modern medicinal chemistry embraces fragment-based drug discovery, DNA-encoded libraries, and AI-driven hit identification. The ultimate goal is to create potent, selective, and metabolically stable compounds with minimal toxicity.</p>
+      </div>
+    </div>
         
-       
-
-    <script src="pharmacy.js"></script>
-
-
-
-
-<div style="display: inline-block; color: blue; text-decoration: underline;">
-Learn more
-</div>
-<details style="display: inline-block;">
-<summary style="color: blue;"></summary>
-
-<div class="Subject-logos"><div class="cology">
+       <div class="Subject-logos">
+<div class="Subject-logos-and-their-links">
 <img src="https://imgcdn.stablediffusionweb.com/2024/10/13/8af1e85b-19f2-49d7-bf11-2be67ca0cf1d.jpg" alt="Pharmacology" class="cology-img">
-<a href="" class="cology-link" id="pharmacology"><div>Click Pharmacology.com</div></a>
+<a href="" class="cology-link" id="pharmacology"><div>Click Pharmacology.com</div></a></div>
 
-</div>
-<div class="ceutics">
+
+
+<div class="Subject-logos-and-their-links">
 <img src="https://img.freepik.com/premium-vector/medical-pharma-logo-design_960117-8.jpg" alt="Pharmaceutics" class="ceutics-img">
 <a href="" class="ceutics-link" id="pharmaceutics"><div>Click Pharmaceutics.com</div></a>
 
 </div>
-<div class="therapy">
+<div class="Subject-logos-and-their-links">
 <img src="https://thumbs.dreamstime.com/b/pharmacotherapy-blue-gradient-concept-icon-pharmacotherapy-blue-gradient-concept-icon-medicine-prescription-medicaments-weight-354721387.jpg" alt="Pharmacotheraphy" class="therapy-img">
 <a href="" class="therapy-link" id="therapy"><div>Click Pharmacotheraphy.com</div></a>
 
 </div>
-<div class="chemistry">
+<div class="Subject-logos-and-their-links">
 <img src="https://tse1.mm.bing.net/th/id/OIP.569-cHIlRB2uZ-rTCKtXpAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Medicinal-Chemistry" class="chemistry-img">
 <a href="" class="med-link" id="med-chem"><div>Click Medicinal-Chemistry.com</div></a>
 
 </div>
-<div class="analysis">
+<div class="Subject-logos-and-their-links">
 <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/pharma-lab-icon-svg-download-png-4972242.png?f=webp&w=512" alt="Pharmaco-Analysis" class="analysis-img">
 <a href="" class="analysis-link" id="analysis"><div>Click Pharmaco-Analysis.com</div></a>
 
 </div>
 
-<div class="cognosy">
+<div class="Subject-logos-and-their-links">
 <img src="https://i.pinimg.com/736x/33/02/7a/33027a1172bdc189ebcd1a5706a1f937.jpg" alt="Pharmacognosy" class="cognosy-img">
 <a href="" class="cognosy-link" id="pharmacognosy"><div>Click Pharmacognosy.com</div></a>
 </div></div>
 
-</details>
+
 
 
 <footer class="footer">
-<div class="last-reference">
-<h3>Reffernces</h3>
-<a href="" class="ref-link">pharmacology</a>
-<a href="" class="ref-link">Pharmaco-Analysis</a>
-<a href="" class="ref-link">Pharmacognosy</a>
-<a href="" class="ref-link">Pharmaceutics</a>
-<a href="" class="ref-link">Pharmacotheraphy</a>
-<a href="" class="ref-link">Medicinal-Chemistry</a>
+<div class="footers-logo">
+    <a href="">
+        <img src="https://media.istockphoto.com/id/1448745004/vector/pharmacy-logo-design-vector-medical-logo-vector.jpg?s=1024x1024&amp;w=is&amp;k=20&amp;c=OEfxY_JS3qFUdRFKUg4JsE5QgtM6kSuU2dIPQSZURaI="  alt="">
+    </a>
 </div>
 <div>
-<a href="" class="copyright">Copyright 1999-2026</a> &copy;
- by Refsnes Data. All Rights Reserved.</div></footer>
+   <a href="">About Us</a>
+</div>
+<div>
+    <a href="">Privacy Policy</a>
+</div>
 
+<div>
+    <a href="">Terms of Services</a>
+</div>
+<div class="social-medias">
+    <a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+    <a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+    <a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
+    <a href=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg></a>
+</div>
+<div>
+Copyright 2026-2050 &copy; 
+ by Refsnes Data. All Rights Reserved.
+</div></footer>
 
+<script src="pharmaceutical library.js"></script>
 </body>
 </html>
