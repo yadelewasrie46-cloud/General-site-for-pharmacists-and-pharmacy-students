@@ -143,17 +143,130 @@ footer div a:hover{
      }
 
 @media (min-width:500px){
-.refference-link{
+.left-section{
  display: block;
- color: white;
- text-decoration: none;
+ width: 10%;
+ img{
+width: 70%;
+border: none;
+border-radius: 50px;
+ }
+ 
 
+}
+.mid-section{
+  width: 60%;
+}
+.input{
+  min-width: 30%;
 }
 .right-section{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 35%;
+  width: 30%;
+}
+.Subject-logos{
+  width: 80%;
+  margin:20px auto ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  img{
+    width: 100%;
+  }
+.signin-button{
+  padding: 3px 6px;
+}
+.home-button{
+padding: 3px 6px;
+}
+}}
+@media (min-width:700px){
+.refference-link{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.right-section{
+  display: flex;
+  width: 25%;
+}
+.mid-section{
+  width: 50%;
+}
+.signin-button{
+  padding: 2px 5px;
+}
+.home-button{
+padding: 2px 5px;
+}
+}
+@media (min-width:900px){
+  .ppts{
+    display: block;
+    width: 10%;
+    a{
+color: white;
+text-decoration: none;
+    }
+    
+  }
+  .exams{
+    display: block;
+    width: 10%;
+    a{
+color: white;
+text-decoration: none;
+    }
+  }
+  .input{
+    width: 60%;
+  }
+  
+  .mid-section{
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+  .right-section{
+    width: 18%;
+    gap: 20px;
+  }
+  .signin-button{
+    padding: 4px;
+  }
+  .home-button{
+    padding: 4px;
+  }
+  .left-section{
+    width: 7%;
+    img{
+      width: 100%;
+    }
+  }
+.left-section{
+  width: 4%;
+}
+.Subject-logos{
+  width: 80%;
+  margin:20px auto ;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  img{
+    width: 100%;
+  }
+}}
+@media (min-width:1200px){
+  .right-section{
+    width: 13.5%;
+  }
+  .signin-button{
+    padding: 4px 4px;
+  }
+  .home-button{
+    padding: 6px 10px;
+  }
 }
 
-}
+
+
