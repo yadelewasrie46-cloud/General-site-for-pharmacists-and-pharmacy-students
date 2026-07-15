@@ -1,776 +1,159 @@
-body {
+*{
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin: 0;
- 
+}
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ vertical-align: top;
+  background-color: blue;
+  margin: 0px auto;
+  padding: 10px;
+  font-size: 20px;
+  position: fixed;
+  top: 0px;
+}
+.left-section{
+  display: none;
   
 }
-.main-content{
-  margin-left: 150px;
-  margin-top: 100px;
-}
-.footer{
-  background-color: black;
-  color: white;
- height: auto;
- display: flex;
- flex-direction: column;
-justify-content: center;
- align-items: center;
-width: 100%;
-margin: 0;
-padding-bottom: 15px;
-}
-
-.header {
+.mid-section{
+  width: 55%;
   display: flex;
   flex-direction: row;
+  gap: 80px;
+}
+.right-section{
+  width: 30%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
-  font-size: 25px;
-}
-
-.left-section {
-  width: 150px;
-  margin-left: 20px;
-}
-.left-section .pharmacy-logo {
-  max-width: 40%;
-  min-width: 50px;
-  height: auto;
-  border: none;
-  border-radius: 50px;
-}
-
-.mid-section {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-}
-.mid-section input {
-  width: 40%;
-  min-width: 200px;
-}
-.mid-section input::-moz-placeholder {
-  padding: 10px;
-  font-size: 20px;
-}
-.mid-section input::placeholder {
-  padding: 10px;
-  font-size: 20px;
-}
-
-.right-section {
-  display: flex;
-  width: 250px;
-  justify-content: space-between;
+  gap: 15px;
   margin-right: 10px;
 }
-.right-section .signin-button {
-  font-size: 23px;
-}
-
-@media (max-width: 500px) {
-  .ppt-link {
-    display: none;
-  }
-  .exam-link {
-    display: none;
-  }
-  .refference-link {
-    display: none;
-  }
-  .home-link {
-    color: white;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  .home-link:hover {
-    text-decoration: underline;
-    color: gold;
-  }
-  .home-link:active {
-    color: tomato;
-  }
-  .mid-section {
-    display: flex;
-    gap: 10px;
-  }
-  .header {
-    gap: 0px;
-    background-color: rgb(116, 208, 164);
-    color: white;
-    font-size: 30px;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 20;
-  }
-  input {
-    flex: 1;
-    font-size: 20px;
-    outline-color: blue;
-    border: none;
-    border-radius: 15px;
-  }
-  input::-moz-placeholder {
-    padding-left: 10px;
-    font-size: 20px;
-  }
-  input::placeholder {
-    padding-left: 10px;
-    font-size: 20px;
-  }
-  .right-section {
-    margin-right: 10px;
-  }
-  .left-section {
-    display: none;
-  }
-  .signin-button {
-    background-color: gold;
-    border: none;
-    border-radius: 15px;
-    color: green;
-    padding: 5px 10px;
-  }
-  .signin-button:hover {
-    background-color: tomato;
-    color: yellow;
-  }
-  .side-bar {
-    position: absolute;
-    top: 85px;
-    left: 0;
-    bottom: 0px;
-    background-color: green;
-    height: 640px;
-  }
-  .side-bar div {
-    margin-bottom: 10px;
-  }
-  .ppt a {
-    text-decoration: none;
-    color: white;
-  }
-  .ppt a:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .exam a {
-    text-decoration: none;
-    color: white;
-  }
-  .exam a:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .reference{
-   display: none;
-  }
-  .reference a:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  main div {
-    margin-top: 90px;
-    margin-left: 170px;
-  }
-  .reference div {
-    margin-bottom: 20px;
-  }
-  .reference div:first-child {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .ppt div {
-    margin-bottom: 20px;
-  }
-  .ppt div:first-child {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .exam div {
-    margin-bottom: 20px;
-  }
-  .exam div:first-child {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .Subject-logos{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-left: 155px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-   
-  }
-  .def-cognosy{
-    display: none;
-  }
-  .def-cology{
-    display: none;
-  }
-  .def-analysis{
-    display: none;
-  }
-  .def-chem{
-    display: none;
-  }
-  .def-therapy{
-    display: none;
-  }
-  .def-ceutics{
-    display: none;
-  }
-  .footer{
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-  }
- .cology-img{
-  max-width: 300px;
- }
- .ceutics-img{
-  max-width: 300px;
- }
- .analysis-img{
-  max-width: 300px;
- }
- .cognosy-img{
-  max-width: 300px;
- }
- .chemistry-img{
-  max-width: 300px;
- }
- .therapy-img{
-  max-width: 300px;
- }
-}
-@media (min-width: 501px) and (max-width: 800px) {
-  .header {
-    gap: 40px;
-    font-size: 20px;
-    background-color: green;
-    color: white;
-    align-items: center;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    z-index: 20;
-    width: 100%;
-  }
-  .home-link:hover {
-    text-decoration: underline;
-    color: gold;
-  }
-  .side-bar {
-    display: block;
-    position: absolute;
-    top: 90px;
-    left: 0;
-    bottom: 0px;
-    background-color: green;
-    font-size: 20px;
-  }
-  .left-section {
-    width: 50px;
-    margin-left: 5px;
-  }
-  .home-link {
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-  }
-  .mid-section {
-    flex: 1;
-    align-items: center;
-  }
-  .ppt-link {
-    display: none;
-  }
-  .exam-link {
-    display: none;
-  }
-  .right-section {
-    width: 100px;
-    margin-right: 10px;
-    align-items: center;
-  }
-  .refference-link {
-    display: none;
-  }
-  input {
-    flex: 1;
-    font-size: 25px;
-    border: none;
-    border-radius: 10px;
-    outline-color: blue;
-  }
-  .signin-button {
-    background-color: gold;
-    color: white;
-    border: none;
-    border-radius: 10px;
-  }
-  .signin-button:hover {
-    background-color: tomato;
-    color: gold;
-  }
-  .ppt div {
-    margin-bottom: 20px;
-  }
-  .ppt div:first-child {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .ppt a {
-    text-decoration: none;
-    color: white;
-  }
-  .ppt a:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .exam div {
-    margin-bottom: 20px;
-  }
-  .exam div:first-child {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .exam a {
-    text-decoration: none;
-    color: white;
-  }
-  .exam a:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .reference div {
-    margin-bottom: 20px;
-  }
-  .reference div:first-child {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .reference a {
-    text-decoration: none;
-    color: white;
-  }
-  .reference a:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .side-bar {
-    height: 1250px;
-  }
-  main div {
-    margin-top: 90px;
-    margin-left: 180px;
-  }
-  .Subject-logos{
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    column-gap: 80px;
-  }
-  .main-content{
-    margin-left: 190px;
-  }
-  
-
-}
-@media (min-width: 800px) {
-  .header {
-    gap: 25px;
-    background-color: green;
-    display: flex;
-    align-items: center;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  .side-bar {
-    display: none;
-  }
-  .left-section {
-    width: 80px;
-    margin-left: 15px;
-  }
-  .mid-section {
-    display: flex;
-    gap: 10px;
-  }
-  input {
-    flex: 1;
-    font-size: 25px;
-    max-width: 60%;
-    min-width: 10%;
-    outline-color: blue;
-    border: none;
-    border-radius: 20px;
-  }
-  .exam-link {
-    margin-right: 20px;
-  }
-  .exam-link {
-    color: white;
-    text-decoration: none;
-  }
-  .exam-link:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .home-link {
-    color: white;
-    text-decoration: none;
-  }
-  .home-link:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .ppt-link {
-    color: white;
-    text-decoration: none;
-  }
-  .ppt-link:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .refference-link {
-    color: white;
-    text-decoration: none;
-  }
-  .refference-link:hover {
-    color: gold;
-    text-decoration: underline;
-  }
-  .home-link {
-    margin-right: 20px;
-  }
-  .ppt-link {
-    margin-right: 20px;
-  }
-  .right-section {
-    width: 250px;
-    margin-right: 10px;
-  }
-  .refference-link {
-    margin-right: 5px;
-  }
-  main div {
-    margin-top: 90px;
-    margin-left: 10px;
-  }
-  .signin-button {
-    background-color: gold;
-    color: white;
-    border: none;
-    border-radius: 10px;
-  }
-  .signin-button:hover {
-    background-color: tomato;
-    color: gold;
-  }
-  .Subject-logos{
-    display: grid;
-    column-gap: 120px;
-   grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-.cology-img{
-  width: 80%;
-  height: auto;
-  animation: cology infinite 5s;
-  margin-bottom: 20px;
-  
-
-}
-@keyframes cology {
-  from{
-    rotate: calc(0deg);
-  } to{
-    rotate: calc(360deg);
-  }
-  
-}
-.therapy-img{
-   width: 80%;
-  height: auto;
-animation: therapy infinite 5s;
-  margin-bottom: 20px;
-}
-@keyframes therapy {
-  from{
-    rotate: calc(0deg);
-  } to{
-    rotate: calc(360deg);
-  }}
-
-.cognosy-img{
-  width: 80%;
-  height: auto;
-  animation: cognosy infinite 5s;
-  margin-bottom: 20px;
-}
-@keyframes cognosy {
-  from{
-    rotate: calc(0deg);
-  } to{
-    rotate: calc(360deg);
-  }}
-.chemistry-img{
-   width: 80%;
-  height: auto;
-animation: chemistry infinite 5s;
-margin-bottom: 20px;
-}
-@keyframes chemistry {
-  from{
-    rotate: calc(0deg);
-  } to{
-    rotate: calc(360deg);
-  }}
-
-.analysis-img{
-  width: 80%;
-  height: auto;
-  animation: analysis infinite 5s;
-  margin-bottom: 20px;
-}
-@keyframes analysis {
-  from{
-    rotate: calc(0deg);
-  } to{
-    rotate: calc(360deg);
-  }}
-.ceutics-img{
-  width: 80%;
-  height: auto;
-  animation: ceutics infinite 5s;
-  margin-bottom: 20px;
-
-}
-@keyframes ceutics {
-  from{
-    rotate: calc(0deg);
-  } to{
-    rotate: calc(360deg);
-  }}
-.Subject-logos{
-  display: grid;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  z-index: 100;
-}
-.cology{
- 
-  background-color: transparent;
+.pharmacy-logo{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px black;
-  box-shadow: 0px 0px 1px black;
-  transition: all 1s;
-  margin-bottom: 30px;
-}
-.cology:hover{
-   box-shadow: 0px 0px 5px black;
-}
-.chemistry{
-  
-   background-color: transparent;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  border: solid 1px black;
-  box-shadow: 0px 0px 1px black;
-  transition: all 1s;
-}
-.chemistry:hover{
-  box-shadow: 0px 0px 5px black;
-}
-.analysis{
-  
-   margin-bottom: 30px;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-   background-color: transparent;
-    border: solid 1px black;
-  box-shadow: 0px 0px 1px black;
-  transition: all 1s;
-   
-}
-.analysis:hover{
-   box-shadow: 0px 0px 5px black;
-}
-.cognosy{
-   background-color: transparent;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
-  border: solid 1px black;
-  box-shadow: 0px 0px 1px black;
-  transition: all 1s;
-  margin-bottom: 30px;
 
+  justify-content: stretch;
 }
-.cognosy:hover{
-  box-shadow: 0px 0px 5px black;
-}
-.therapy{
+.home{
+  width: 10%;
 
-  background-color: transparent;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-   border: solid 1px black;
-  box-shadow: 0px 0px 1px black;
-  transition: all 1s;
-  margin-bottom: 30px;
+}.ppts{
+  width: 10%;
+  display: none;
+}.exams{
+  width:10%;
+  display: none;
+}.input{
+  width: 80%;
+  min-width: 80px;
+  border-radius: 20px;
+  outline-color: blue;
+  font-size: 23px;
+  padding-left: 10px;
+}
+.input::placeholder{
+ padding: 10px;
 
-}
-.therapy:hover{
-  box-shadow: 0px 0px 5px black;
-}
-.ceutics{
-  
-  background-color: transparent;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px black;
-  box-shadow: 0px 0px 1px black;
-  transition: all 1s;
-  margin-bottom: 30px;
-
-
-}
-.ceutics:hover{
-  box-shadow: 0px 0px 5px black;
-}
-
-
-.ref-link{
-  text-decoration: none;
-  color: orange;
-  display: block;
-  margin-bottom: 6px;
-}
-.ref-link:hover{
-  text-decoration: underline;
-  color: tomato;
-}
-.copyright{
-  text-decoration: none;
-  color: white;
-}
-.copyright:hover{
-  text-decoration: underline;
-  color: tomato;
-}
-h3{
-  margin-bottom: 5px;
-}
-.cognosy-link{
-text-decoration: none;
-color: rgb(0, 0, 0);
-font-size: 20px;
-}
-.cognosy-link:hover{
-  text-decoration: underline;
-  color: orange;
-}
-.med-link{
-text-decoration: none;
-color: rgb(0, 0, 0);
-font-size: 20px;
-}
-.med-link:hover{
-  text-decoration: underline;
-  color: orange;
-}
-.ceutics-link{
-text-decoration: none;
-color: black;
-font-size: 20px;
-}
-.ceutics-link:hover{
-  text-decoration: underline;
-  color: orange;
-}
-.cology-link{
-text-decoration: none;
-color: #0d0c0c;
-font-size: 20px;
-}
-.cology-link:hover{
-  text-decoration: underline;
-  color: orange;
-}
-.therapy-link{
-text-decoration: none;
-color: rgb(0, 0, 0);
-font-size: 20px;
-}
-.therapy-link:hover{
-  text-decoration: underline;
-  color: orange;
-}
-.analysis-link{
-text-decoration: none;
-color: rgb(0, 0, 0);
-font-size: 20px;
-}
-.analysis-link:hover{
-  text-decoration: underline;
-  color: orange;
-}
-.span-tooltip{
-  position: relative;
 }
 .sign-tooltip{
-  background-color: black;
-  color: white;
-  position: absolute;
-  top: 55px;
-  left: 5px;
-  
-  border-radius: 5px;
-  opacity: 0;
-  transition: 0.15s;
-  padding: 4px 8px;
+  display: none;
 }
-.signin-link:hover+.sign-tooltip{
-  opacity: 0.6;
+.span-tooltip{
+  width: 40%;
+}
+.refference-link{
+ display: none;
+}
+.signin-button{
+  font-size: 20px;
+  padding: 4px 10px;
+  border: none;
+  background-color: yellow;
+  border-radius: 5px;
+}.home-button{
+   font-size: 20px;
+   padding: 4px 10px;
+   background-color: yellow;
+   border: none;
+   border-radius: 5px;
+}
+.main-content{
+  width: 80%;
+  margin:80px auto;
+  
+}
+.Subject-logos-and-their-links{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+  background-color: azure;
+  padding: 5px;
+  border: 2px solid rgb(13, 235, 235);
+  transition: border 1s ease;
+  
+  img{
+    width: 100%;
+  }
+}
+.Subject-logos-and-their-links:hover{
+  border: 2px solid black;
+  
 }
 
-/*.right-section{
+.footer{
+  padding-bottom: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}*/
+  gap: 15px;
+  background-color: black;
+  div{
+    color: white;
+    a{
+      text-decoration: none;
+      color: rgb(189, 179, 179);
+    }
+  }
+}
+footer div a:hover{
+  color: white;
+}
+.footers-logo{
+  width: 5%;
+  a{
+    img{
+      width: 100%;
+      padding-top: 10px;
+     }}}
+     .social-medias{
+      display: flex;
+      align-items: center;
+       gap: 10px;
+     }
 
+@media (min-width:500px){
+.refference-link{
+ display: block;
+ color: white;
+ text-decoration: none;
+
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+}
