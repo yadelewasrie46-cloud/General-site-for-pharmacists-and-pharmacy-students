@@ -123,6 +123,3 @@ main.style.display = "none";
 let home = document.getElementById('home');
 home.onclick = sideBar;
 
-function getTheLink(){
-  
-}
